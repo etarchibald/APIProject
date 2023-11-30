@@ -15,6 +15,10 @@
 		4A8EBE302B17C5A2002E553B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A8EBE2E2B17C5A2002E553B /* LaunchScreen.storyboard */; };
 		4A8EBE382B17CD6F002E553B /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8EBE372B17CD6F002E553B /* Dog.swift */; };
 		4A8EBE3B2B17CE2A002E553B /* DogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8EBE3A2B17CE2A002E553B /* DogController.swift */; };
+		4A8EBE3D2B18D9D1002E553B /* RepresentativesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8EBE3C2B18D9D1002E553B /* RepresentativesTableViewController.swift */; };
+		4A8EBE402B18DBBD002E553B /* RepresentativesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8EBE3F2B18DBBD002E553B /* RepresentativesTableViewCell.swift */; };
+		4A8EBE422B18DEEB002E553B /* RepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8EBE412B18DEEB002E553B /* RepModel.swift */; };
+		4A8EBE442B18E172002E553B /* RepresentativesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8EBE432B18E172002E553B /* RepresentativesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		4A8EBE312B17C5A2002E553B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A8EBE372B17CD6F002E553B /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		4A8EBE3A2B17CE2A002E553B /* DogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogController.swift; sourceTree = "<group>"; };
+		4A8EBE3C2B18D9D1002E553B /* RepresentativesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativesTableViewController.swift; sourceTree = "<group>"; };
+		4A8EBE3F2B18DBBD002E553B /* RepresentativesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RepresentativesTableViewCell.swift; path = APIProject/RepresentativesTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		4A8EBE412B18DEEB002E553B /* RepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepModel.swift; sourceTree = "<group>"; };
+		4A8EBE432B18E172002E553B /* RepresentativesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +71,10 @@
 				4A8EBE232B17C5A2002E553B /* AppDelegate.swift */,
 				4A8EBE252B17C5A2002E553B /* SceneDelegate.swift */,
 				4A8EBE392B17CD74002E553B /* Dog */,
-				4A8EBE292B17C5A2002E553B /* Main.storyboard */,
+				4A8EBE3E2B18D9D5002E553B /* Representatives */,
 				4A8EBE2C2B17C5A2002E553B /* Assets.xcassets */,
 				4A8EBE2E2B17C5A2002E553B /* LaunchScreen.storyboard */,
+				4A8EBE292B17C5A2002E553B /* Main.storyboard */,
 				4A8EBE312B17C5A2002E553B /* Info.plist */,
 			);
 			path = APIProject;
@@ -79,6 +88,17 @@
 				4A8EBE3A2B17CE2A002E553B /* DogController.swift */,
 			);
 			path = Dog;
+			sourceTree = "<group>";
+		};
+		4A8EBE3E2B18D9D5002E553B /* Representatives */ = {
+			isa = PBXGroup;
+			children = (
+				4A8EBE3F2B18DBBD002E553B /* RepresentativesTableViewCell.swift */,
+				4A8EBE3C2B18D9D1002E553B /* RepresentativesTableViewController.swift */,
+				4A8EBE412B18DEEB002E553B /* RepModel.swift */,
+				4A8EBE432B18E172002E553B /* RepresentativesController.swift */,
+			);
+			path = Representatives;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8EBE402B18DBBD002E553B /* RepresentativesTableViewCell.swift in Sources */,
+				4A8EBE422B18DEEB002E553B /* RepModel.swift in Sources */,
+				4A8EBE442B18E172002E553B /* RepresentativesController.swift in Sources */,
+				4A8EBE3D2B18D9D1002E553B /* RepresentativesTableViewController.swift in Sources */,
 				4A8EBE282B17C5A2002E553B /* ViewController.swift in Sources */,
 				4A8EBE242B17C5A2002E553B /* AppDelegate.swift in Sources */,
 				4A8EBE382B17CD6F002E553B /* Dog.swift in Sources */,
