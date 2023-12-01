@@ -19,6 +19,10 @@
 		4A8EBE402B18DBBD002E553B /* RepresentativesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8EBE3F2B18DBBD002E553B /* RepresentativesTableViewCell.swift */; };
 		4A8EBE422B18DEEB002E553B /* RepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8EBE412B18DEEB002E553B /* RepModel.swift */; };
 		4A8EBE442B18E172002E553B /* RepresentativesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8EBE432B18E172002E553B /* RepresentativesController.swift */; };
+		4A8EBE462B18F995002E553B /* NobelPeacePrizeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8EBE452B18F995002E553B /* NobelPeacePrizeTableViewController.swift */; };
+		4A8EBE492B191837002E553B /* NobelPrizeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8EBE482B191837002E553B /* NobelPrizeModel.swift */; };
+		4A8EBE4B2B191CC9002E553B /* NobelPrizeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8EBE4A2B191CC9002E553B /* NobelPrizeController.swift */; };
+		4A8EBE4D2B1A2FBF002E553B /* NobelPrizeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8EBE4C2B1A2FBF002E553B /* NobelPrizeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		4A8EBE3F2B18DBBD002E553B /* RepresentativesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RepresentativesTableViewCell.swift; path = APIProject/RepresentativesTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		4A8EBE412B18DEEB002E553B /* RepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepModel.swift; sourceTree = "<group>"; };
 		4A8EBE432B18E172002E553B /* RepresentativesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativesController.swift; sourceTree = "<group>"; };
+		4A8EBE452B18F995002E553B /* NobelPeacePrizeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobelPeacePrizeTableViewController.swift; sourceTree = "<group>"; };
+		4A8EBE482B191837002E553B /* NobelPrizeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NobelPrizeModel.swift; path = APIProject/NobelPrizeModel.swift; sourceTree = SOURCE_ROOT; };
+		4A8EBE4A2B191CC9002E553B /* NobelPrizeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobelPrizeController.swift; sourceTree = "<group>"; };
+		4A8EBE4C2B1A2FBF002E553B /* NobelPrizeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobelPrizeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,7 @@
 			children = (
 				4A8EBE232B17C5A2002E553B /* AppDelegate.swift */,
 				4A8EBE252B17C5A2002E553B /* SceneDelegate.swift */,
+				4A8EBE472B18F999002E553B /* Nobel Peace Prize */,
 				4A8EBE392B17CD74002E553B /* Dog */,
 				4A8EBE3E2B18D9D5002E553B /* Representatives */,
 				4A8EBE2C2B17C5A2002E553B /* Assets.xcassets */,
@@ -99,6 +108,17 @@
 				4A8EBE432B18E172002E553B /* RepresentativesController.swift */,
 			);
 			path = Representatives;
+			sourceTree = "<group>";
+		};
+		4A8EBE472B18F999002E553B /* Nobel Peace Prize */ = {
+			isa = PBXGroup;
+			children = (
+				4A8EBE482B191837002E553B /* NobelPrizeModel.swift */,
+				4A8EBE4A2B191CC9002E553B /* NobelPrizeController.swift */,
+				4A8EBE452B18F995002E553B /* NobelPeacePrizeTableViewController.swift */,
+				4A8EBE4C2B1A2FBF002E553B /* NobelPrizeTableViewCell.swift */,
+			);
+			path = "Nobel Peace Prize";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,15 +192,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8EBE462B18F995002E553B /* NobelPeacePrizeTableViewController.swift in Sources */,
 				4A8EBE402B18DBBD002E553B /* RepresentativesTableViewCell.swift in Sources */,
 				4A8EBE422B18DEEB002E553B /* RepModel.swift in Sources */,
 				4A8EBE442B18E172002E553B /* RepresentativesController.swift in Sources */,
+				4A8EBE492B191837002E553B /* NobelPrizeModel.swift in Sources */,
+				4A8EBE4D2B1A2FBF002E553B /* NobelPrizeTableViewCell.swift in Sources */,
 				4A8EBE3D2B18D9D1002E553B /* RepresentativesTableViewController.swift in Sources */,
 				4A8EBE282B17C5A2002E553B /* ViewController.swift in Sources */,
 				4A8EBE242B17C5A2002E553B /* AppDelegate.swift in Sources */,
 				4A8EBE382B17CD6F002E553B /* Dog.swift in Sources */,
 				4A8EBE3B2B17CE2A002E553B /* DogController.swift in Sources */,
 				4A8EBE262B17C5A2002E553B /* SceneDelegate.swift in Sources */,
+				4A8EBE4B2B191CC9002E553B /* NobelPrizeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

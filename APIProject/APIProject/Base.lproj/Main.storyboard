@@ -87,22 +87,59 @@
             </objects>
             <point key="canvasLocation" x="2817.5572519083967" y="-2.1126760563380285"/>
         </scene>
-        <!--Nobel-->
+        <!--Nobel Peace Prize-->
         <scene sceneID="Xev-IW-g5M">
             <objects>
-                <tableViewController id="7ka-Ri-jmS" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Odn-Er-PVy">
+                <tableViewController id="7ka-Ri-jmS" customClass="NobelPeacePrizeTableViewController" customModule="APIProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="Odn-Er-PVy">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="Cb4-iV-Doh">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="7ka-Ri-jmS" id="Fsc-h0-2Vj"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gqP-UZ-Rag">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="nobelPeacePrize" rowHeight="166" id="gqP-UZ-Rag" customClass="NobelPrizeTableViewCell" customModule="APIProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="82" width="393" height="166"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gqP-UZ-Rag" id="fg2-gx-7Qr">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="166"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="G4d-eM-V4C">
+                                            <rect key="frame" x="20" y="11" width="353" height="144"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSs-yK-Pvv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="71.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motivation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyg-9e-G1O">
+                                                    <rect key="frame" x="0.0" y="72.666666666666686" width="353" height="71.333333333333314"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="G4d-eM-V4C" firstAttribute="leading" secondItem="fg2-gx-7Qr" secondAttribute="leadingMargin" id="IcU-Fo-c6t"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="G4d-eM-V4C" secondAttribute="trailing" id="Vks-lk-mUT"/>
+                                        <constraint firstItem="G4d-eM-V4C" firstAttribute="bottom" secondItem="fg2-gx-7Qr" secondAttribute="bottomMargin" id="esH-LD-w2e"/>
+                                        <constraint firstItem="G4d-eM-V4C" firstAttribute="top" secondItem="fg2-gx-7Qr" secondAttribute="topMargin" id="fcL-pN-BQS"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="motivationLabel" destination="yyg-9e-G1O" id="QEy-vK-ZuE"/>
+                                    <outlet property="nameLabel" destination="TSs-yK-Pvv" id="jwf-Oz-8kF"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -110,11 +147,14 @@
                             <outlet property="delegate" destination="7ka-Ri-jmS" id="j6M-Ub-JRd"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Nobel" image="brain.head.profile" catalog="system" id="dbw-hu-NAQ"/>
+                    <navigationItem key="navigationItem" title="Nobel Peace Prize" id="h4h-H4-f6L"/>
+                    <connections>
+                        <outlet property="searchBar" destination="Cb4-iV-Doh" id="p0W-Ji-xh9"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k2A-zh-gL2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3660.3053435114502" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="4587.0229007633588" y="-2.1126760563380285"/>
         </scene>
         <!--Dog-->
         <scene sceneID="tne-QT-ifu">
@@ -175,7 +215,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="DM0-HV-QPM"/>
                         <segue destination="ffy-Sj-za8" kind="relationship" relationship="viewControllers" id="Wsc-f2-APJ"/>
-                        <segue destination="7ka-Ri-jmS" kind="relationship" relationship="viewControllers" id="HmA-eB-jy7"/>
+                        <segue destination="DJB-0N-Xtv" kind="relationship" relationship="viewControllers" id="HmA-eB-jy7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1CT-EQ-y5m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -200,6 +240,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="743-hg-aTx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1890.8396946564885" y="-2.1126760563380285"/>
+        </scene>
+        <!--Nobel-->
+        <scene sceneID="JHe-Ha-TXc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DJB-0N-Xtv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Nobel" image="brain.head.profile" catalog="system" id="dbw-hu-NAQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="33m-9Y-w10">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7ka-Ri-jmS" kind="relationship" relationship="rootViewController" id="w8w-3j-TIi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1VH-4I-q9t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3660.3053435114502" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
